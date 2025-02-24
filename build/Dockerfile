@@ -7,10 +7,7 @@ RUN \
 RUN \
     echo "**** Install Packages ****" && \
     apk add \
-        curl \
-        openssl
-
-COPY nginx.conf /nginx.conf
+        curl
 
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
